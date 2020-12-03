@@ -33,10 +33,13 @@ public class Pelicula {
     
     //Revisar el tipo de dato para anno
     @Column(name="anno")
-    private String peliAnno;
+    private Long peliAnno;
     
     @Column(name="director")
     private String peliDirector;
+    
+    @Column(name="resumen")
+    private String peliResumen;
 
     public Long getPeliId() {
         return peliId;
@@ -54,11 +57,11 @@ public class Pelicula {
         this.peliTitulo = peliTitulo;
     }
 
-    public String getPeliAnno() {
+    public Long getPeliAnno() {
         return peliAnno;
     }
 
-    public void setPeliAnno(String peliAnno) {
+    public void setPeliAnno(Long peliAnno) {
         this.peliAnno = peliAnno;
     }
 
@@ -70,9 +73,17 @@ public class Pelicula {
         this.peliDirector = peliDirector;
     }
 
+    public String getPeliResumen() {
+        return peliResumen;
+    }
+
+    public void setPeliResumen(String peliResumen) {
+        this.peliResumen = peliResumen;
+    }
+
     @Override
     public String toString() {
-        return "Pelicula{" + "peliId=" + peliId + ", peliTitulo=" + peliTitulo + ", peliAnno=" + peliAnno + ", peliDirector=" + peliDirector + '}';
+        return "Pelicula{" + "peliId=" + peliId + ", peliTitulo=" + peliTitulo + ", peliAnno=" + peliAnno + ", peliDirector=" + peliDirector + ", peliResumen=" + peliResumen + '}';
     }
     
 }
