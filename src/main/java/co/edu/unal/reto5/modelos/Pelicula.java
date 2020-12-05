@@ -5,6 +5,7 @@
  */
 package co.edu.unal.reto5.modelos;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -21,7 +22,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "pelicula")
-public class Pelicula {
+public class Pelicula implements Serializable {
     
     @Id
     @GeneratedValue
