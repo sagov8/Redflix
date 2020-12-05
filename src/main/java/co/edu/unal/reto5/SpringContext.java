@@ -5,14 +5,15 @@
  */
 package co.edu.unal.reto5;
 
+/**
+ *
+ * @author User
+ */
+
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
-/**
- *
- * @author happygallo
- */
 
 @Component
 public class SpringContext implements ApplicationContextAware {
@@ -36,3 +37,4 @@ public class SpringContext implements ApplicationContextAware {
         SpringContext.context = context;
     }
 }
+

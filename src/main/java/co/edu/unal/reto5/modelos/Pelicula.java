@@ -5,6 +5,14 @@
  */
 package co.edu.unal.reto5.modelos;
 
+/**
+ *
+ * @author User
+ */
+public class Pelicula {
+    
+
+
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -87,4 +95,5 @@ public class Pelicula implements Serializable {
         return "Pelicula{" + "peliId=" + peliId + ", peliTitulo=" + peliTitulo + ", peliAnno=" + peliAnno + ", peliDirector=" + peliDirector + ", peliResumen=" + peliResumen + '}';
     }
     
+
 }
